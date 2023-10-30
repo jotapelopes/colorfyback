@@ -283,22 +283,22 @@
 
 
                             <div class="formularios">
+                                <h1>FALE CONOSCO</h1>
+                                Clique no botão do WhatsApp ou deixe seu contato para nossa equipe comercial te contatar
+
                                 <form action="index.html" method="get">
-                                    <label for="nome">
-                                        <input type="text" placeholder="Insira seu nome" required>Nome
+                                    <label for="nome" class="nome">Nome
+                                        <input type="text" placeholder="Insira seu nome" required>
                                     </label>
 
-                                    <label for="telefone" method="get">
-                                        <input type="tel" placeholder="Insira seu telefone" required> Telefone
+                                    <label for="telefone"  class="telefone">Telefone
+                                        <input type="tel" placeholder="Insira seu telefone" required>
                                     </label>
                                     
-                                    <label for="email" method="get">
+                                    <label for="email" class="email">E-mail
                                         <input type="email" placeholder="Insira seu e-mail ">
-                                        E-mail </label>
+                                    </label>
                                     
-
-
-                                        
                                     <button id="botaoForm" type="submit">Enviar</button>
 
                                 </form>
@@ -306,27 +306,6 @@
                                 
                             </div>
 
-
-                            <div class="col-lg-2 col-sm-3 col-5 ms-lg-auto ms-sm-0 ms-auto mb-sm-0 mb-3">
-                                <div class="row">
-                                    <div class="col-12 text-uppercase">
-                                        <h4>Links</h4>
-                                    </div>
-                                    <div class="col-12">
-                                        <ul class="footer-nav">
-                                            <li>
-                                                <a href="./index.html">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="./product.html">Produtos</a>
-                                            </li>
-                                            <li>
-                                                <a href="./aboutUs.html">Sobre nós</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </footer>
@@ -340,6 +319,13 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=14981744693&text=oiiiiiiiiiiiiiiiii">
+  <div class="rwb-tooltip">Fale conosco no WhatsApp!</div>
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>
+
+
 </body>
 
 
@@ -392,8 +378,32 @@
         border-color: #141414;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);}
 
+    .nome{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
 
+    .email{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+    }
     
+    .telefone{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+    }
+
+    #botaoForm{
+    margin-top: 20px;             
+    background-color: #99b1ff;                           
+
+    }
+
 
 
 </style>
